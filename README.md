@@ -1,0 +1,1 @@
+This is random story about life in Jakarta
