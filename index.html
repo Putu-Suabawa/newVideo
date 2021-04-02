@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Cerita Kita</title>
+  </head>
+  <body>
+    <section id="top">
+      <img src="./image/moon1.JPG">
+    </section>
+
+    <section id="main">
+      <h1>Lengkapi data -<br> untuk Cerita Kita!</h1>
+      <hr>
+      <!--Add your form below:-->
+      <form action="story.html" method="GET">
+      <label for="fav-1">Tempat favorit:</label>
+      <input type="text" id="fav-1" name="fav-1" pattern="[a-zA-Z]+" required><br>
+      <label for="fav-2">Tempat favorite lain:</label>
+      <input type="text" id="fav-2" name="fav-2" required><br>
+      <label for="fav-3">Satu tempat favorite lain lagi:</label>
+      <input type="text" id="fav-3" name="fav-3" required><br>
+      <label for="adj-1">Isi dengan kata sifat:</label>
+      <input type="text" id="adj-1" name="adj-1" required><br>
+      <label for="verb-1">Isi dengan kata kerja:</label>
+      <input type="text" id="verb-1" name="verb-1" required><br>
+      <label for="num-1">Berapa kali ya?:</label>
+      <input type="number" id="num-1" name="num-1" min="2" max="5" required><br>
+      <span>Iya apa tidak?:</span>
+      <input id="yes" type="radio" name="answer" value="iya" required>
+      <label for="yes">Iya</label>
+      <input id="no" type="radio" name="answer" value="tidak" required>
+      <label for="no">Tidak</label><br>
+      <label for="speed">Berapa lama ya?:</label>
+      <select id="speed" name="speed">
+        <option value="cepat">Cepat</option>
+        <option value="lambat">Lambat</option>
+      </select><br>
+      <label for="quote">Kata kata yg kamu paling suka:</label>
+      <input id="quote" name="quote" type="text" list="quote-choices" required>
+      <datalist id="quote-choices">
+        <option value="Kalau bolanya masuk kamu akan digendong!"></option>
+        <option value="Kalau berangkat sekarang tidak akan hujan!"></option>
+        <option value="Kalau menang bisa dapat lagi"></option>
+      </datalist><br>
+      <label for="message">Ketik pesan apa aja:</label><br>
+      <textarea id="message" name="message" rows="2" cols="50" required></textarea><br>
+
+
+      <br><input type="submit" value="Ini cerita kita loh!">
+      
+      </form>
+    </section>
+  </body>
+</html>
